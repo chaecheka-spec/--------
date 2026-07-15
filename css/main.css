@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+:root{
+    background-color: #131316;
+
+}
+
+.button_primary {
+    background-color: #F0F0E7;
+    color: #131316;
+    padding: 14px 20px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 65px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.button_primary:hover {
+    background-color: #5468FF;
+    color: #F0F0E7;
+}
+
+.button_secondary{
+    color: #F0F0E7;
+    padding: 14px 24px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    border: #3B3B3B;
+    border-radius: 25px;
+}
+
+.button_secondary:hover {
+    border: #F0F0E7;
+}
+
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #131316;
+    font-family: 'Unbounded';
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 5px 5px 20px;
+    border: 1px solid #3B3B3B;
+    border-radius: 30px;
+}
+
+#Logo {
+    color: #F0F0E7;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 44px;
+}
+
+.Header_nav {
+    color: #868686;
+    font-family: 'Onest', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
