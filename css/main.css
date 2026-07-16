@@ -8,7 +8,7 @@ a {
     background-color: #131316;
 
 }
-
+/* Кнопки */
 .button_primary {
     background-color: #F0F0E7;
     color: #131316;
@@ -32,7 +32,7 @@ a {
     padding: 14px 24px;
     font-family: 'Unbounded', sans-serif;
     font-size: 14px;
-    border: #3B3B3B;
+    border: 1px solid #3B3B3B;
     border-radius: 25px;
 }
 
@@ -40,6 +40,39 @@ a {
     border: #F0F0E7;
 }
 
+.button_mark {
+    background-color: #131316;
+    color: #868686;
+    padding: 10px 20px;
+    font-family: 'Onest', sans-serif;
+    font-size: 14px;
+    border: 1px solid #868686;
+    border-radius: 57px;
+}
+
+/*Тексты*/
+.H1 {
+    color: #F0F0E7;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.T14R {
+    color: #F0F0E7;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.T12R {
+    color: #868686;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/*Меню*/
 .Header {
     position: sticky;
     top: 0;
@@ -77,4 +110,39 @@ nav {
     font-family: 'Onest', sans-serif;
     font-weight: 500;
     font-size: 14px;
+}
+
+/*Hero*/
+#Hero {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 72px 100px;
+}
+
+.Hero_photo {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.Hero_photo img {
+    width: 100%;                /* фото растягивается на всю ширину */
+    height: auto;               /* высота автоматическая */
+    display: block;             /* убираем отступ снизу */
+}
+
+.Photo_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;              
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.6),
+        transparent
+    );
 }
