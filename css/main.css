@@ -50,6 +50,8 @@ a {
 }
 
 .button_mark {
+    display: inline-block;  /* или width: fit-content */
+    width: fit-content;
     background-color: #131316;
     color: #868686;
     padding: 10px 20px;
@@ -61,6 +63,8 @@ a {
 
 .Photo_Badge {
     position: absolute;
+    top: 30px;
+    left: 30px;
     background-color: #5468FF;
     color: #F0F0E7;
     padding: 5px 16px;
@@ -76,10 +80,14 @@ a {
     font-family: 'Unbounded', sans-serif;
     font-weight: 700;
     font-size: 56px;
+    line-height: 61px;
 }
 
 .H1_1 {
+    background-color: #5468FF20;
     color: #5468FF;
+    padding: 0px 10px;
+    border: 1px solid #5468FF90;
     font-family: 'Unbounded', sans-serif;
     font-weight: 700;
     font-size: 56px;
@@ -171,20 +179,22 @@ nav {
     display: block;             /* убираем отступ снизу */
     aspect-ratio: 4/5;          /* соотношение сторон 4:5 */
     object-fit: cover;          /* фото не сплющится */
+    z-index: 1;
 }
 
-.Photo_overlay { /* Градиент */
+.Photo_overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 500px;              
+    height: 200px;           /* высота градиента */
     background: linear-gradient(
         to top,
-        rgba(0,0,0,1),
-        transparent
+        rgba(0, 0, 0, 0.7),  /* чёрный снизу (70% непрозрачности) */
+        rgba(0, 0, 0, 0.3),  /* середина (30%) */
+        transparent          /* сверху прозрачно */
     );
-    z-index: 1;
+    z-index: 2;
 }
 
 .HPhoto_text {
@@ -192,7 +202,7 @@ nav {
     bottom: 20px;
     left: 20px;
     color: white;
-    z-index: 2;
+    
 }
 
 .Hero_Title {
@@ -201,8 +211,8 @@ nav {
 
 .send_badge {
     position: absolute;
-    top: 110px;                 /* по у */
-    right: 200px;               /* по х */
+    top: 80px;                 /* по у */
+    right: 232px;               /* по х */
     background: #6C63FF;
     color: white;
     padding: 5px 16px;
