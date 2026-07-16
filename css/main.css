@@ -226,3 +226,42 @@ nav {
     display: flex;
     gap: 30px; 
 }
+
+/*БЕГУЩАЯ СТРОКА*/
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    background-color: #5468FF;
+    padding: 44px 28px;
+}
+
+.marquee_line{
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
+}
+
+.marquee_line:hover {
+    animation-play-state: paused;
+}
+
+.TEXTmarquee_item{
+    flex-shrink: 0;
+    padding: 0 0px 0px 112px;
+    color: #F0F0E7;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Начинаем с исходной позиции */
+    }
+    100% {
+        /* Сдвигаем ленту ровно на 50% её ширины. 
+           Поскольку вторая половина ленты — точная копия первой, 
+           в этот момент она встанет ровно на место первой, и скачок будет незаметен. */
+        transform: translateX(-50%); 
+    }
+}
