@@ -182,12 +182,12 @@ nav {
     z-index: 1;
 }
 
-.Photo_overlay {
+.HPhoto_overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;           /* высота градиента */
+    height: 300px;           /* высота градиента */
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.7),  /* чёрный снизу (70% непрозрачности) */
@@ -202,7 +202,7 @@ nav {
     bottom: 20px;
     left: 20px;
     color: white;
-    
+    z-index: 3;
 }
 
 .Hero_Title {
