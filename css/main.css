@@ -93,6 +93,21 @@ a {
     font-size: 56px;
 }
 
+.H2B {
+    color: #F0F0E7;
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.H3B{
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 20px;
+}
+
 .T20L {
     color: #868686;
     font-family: 'Onest', sans-serif;
@@ -105,6 +120,13 @@ a {
     font-family: 'Unbounded', sans-serif;
     font-weight: 700;
     font-size: 14px;
+}
+
+.T14L {
+    font-family: 'Onest', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .T12R {
@@ -232,7 +254,7 @@ nav {
     width: 100%;
     overflow: hidden;
     background-color: #5468FF;
-    padding: 44px 28px;
+    padding: 36px 28px;
 }
 
 .marquee_line{
@@ -264,4 +286,95 @@ nav {
            в этот момент она встанет ровно на место первой, и скачок будет незаметен. */
         transform: translateX(-50%); 
     }
+}
+
+/*УСЛУГИ*/
+/**/
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 120px 100px;
+    gap: 20px;
+}
+
+.services_text_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services_text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.services_card {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.White_card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0E7;
+    padding: 50px 50px;
+    border-radius: 51px;
+    gap: 28px;
+}
+
+.Photo_site{
+    width: 100%;                /* фото растягивается на всю ширину */
+    height: 296px;               
+    display: block;             /* убираем отступ снизу */
+    aspect-ratio: 4/5;          /* соотношение сторон 4:5 */
+    object-fit: cover;
+}
+
+.services_site{
+    color: #131316;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.services_three {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.services_two {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.services_brending {
+    background-color: #131316;
+    color: #F0F0E7;
+    padding: 120px 50px 50px 50px;
+    border: 1px solid #3B3B3B;
+    border-radius: 50px;
+    gap: 15px;
+}
+
+.services_UIUX {
+    background-color: #F0F0E7;
+    color: #131316;
+    padding: 120px 50px 50px 50px;
+    border-radius: 50px;
+    gap: 15px;
+}
+
+.services_selling_materials {
+    background-color: #1E1E22;
+    color: #F0F0E7;
+    padding: 120px 320px 50px 50px;
+    border-radius: 50px;
+    gap: 15px;
 }
