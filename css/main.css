@@ -484,6 +484,11 @@ nav {
     gap: 10px;
 }
 
+.line{
+    height: 1px;
+    background-color: #131316;
+}
+
 .help_cta {
     display: flex;
     flex-direction: column;
