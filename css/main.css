@@ -442,12 +442,18 @@ nav {
     margin: 0 auto;
     max-width: 1240px;
     padding: 60px 100px 60px 100px;
-    gap: 100px;
+}
+
+.help_container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .help_name_text_content {
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
 
 .help_text_content {
