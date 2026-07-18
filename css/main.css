@@ -185,6 +185,20 @@ p {
     font-size: 12px;
 }
 
+/*шапка блока*/
+.cap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cap_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
 /*Меню*/
 .Header {
     position: sticky;
@@ -363,12 +377,6 @@ nav {
     gap: 20px;
 }
 
-.services_text_content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .services_text{
     display: flex;
     flex-direction: column;
@@ -541,12 +549,6 @@ nav {
     max-width: 1240px;
     padding: 60px 100px 60px 100px;
     gap: 80px;
-}
-
-.portfolio_header {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .portfolio_header_text {
