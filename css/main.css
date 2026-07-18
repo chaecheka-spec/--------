@@ -434,7 +434,7 @@ nav {
     gap: 5px;
 }
 
-/*ПОМОГИТЕ*/ /**/
+/*ПОМОГИТЕ*/
 .help {
     display: flex;
     flex-direction: column;
@@ -514,4 +514,27 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+/*КЕЙСЫ*/ /**/
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 60px 100px 60px 100px;
+}
+
+.portfolio_header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.portfolio_header_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 106px;
 }
