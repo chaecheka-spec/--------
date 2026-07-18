@@ -63,8 +63,8 @@ a {
 
 .Photo_Badge {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 11px;
+    left: 50px;
     background-color: #5468FF;
     color: #F0F0E7;
     padding: 5px 16px;
@@ -72,6 +72,21 @@ a {
     font-size: 11px;
     border-radius: 8px;
     z-index: 2;
+}
+
+.button_case {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    color: #F0F0E7;
+    padding: 4px 0px;
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.button_case:hover {
+    color: #5468FF;
 }
 
 /*Тексты*/
@@ -256,7 +271,7 @@ nav {
 .hero_content {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 17px;
 }
 
 .HPhoto_text {
@@ -367,6 +382,7 @@ nav {
 }
 
 .White_card {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #F0F0E7;
@@ -375,7 +391,7 @@ nav {
     gap: 28px;
 }
 
-.Photo_site{
+.Photo_site {
     width: 100%;                /* фото растягивается на всю ширину */
     height: 296px;               
     display: block;             /* убираем отступ снизу */
@@ -516,7 +532,7 @@ nav {
     text-align: center;
 }
 
-/*КЕЙСЫ*/ /**/
+/*КЕЙСЫ*/ 
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -524,6 +540,7 @@ nav {
     margin: 0 auto;
     max-width: 1240px;
     padding: 60px 100px 60px 100px;
+    gap: 80px;
 }
 
 .portfolio_header {
@@ -537,4 +554,79 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     gap: 106px;
+}
+
+.portfolio_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.portfolio_test_color1 {
+    color: #F0F0E7;
+}
+
+.portfolio_test_color2 {
+    color: #868686;
+}
+
+/*кейс 1*/
+.portfolio_cards_one {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    border-radius: 51px;
+}
+
+.portfolio_cards_one img {
+    border-radius: 51px 0px 0px 51px;
+}
+
+.portfolio_card_horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 152px;
+    background-color: #1E1E22;
+    padding: 50px 168px 50px 64px;
+    border-radius: 0 51px 51px 0;
+}
+
+.portfolio_card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portfolio_card_info_mark {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.portfolio_card_info_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*кейс 2.3*/
+.portfolio_cards_two {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+}
+
+.portfolio_cards_two_one {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.portfolio_card_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    background-color: #1E1E22;
+    border-radius: 0 0 51px 51px;
+    padding: 24px 100px 50px 50px;
 }
