@@ -108,6 +108,34 @@ a {
     line-height: 20px;
 }
 
+.H6SB {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.H7M {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.T90EB {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 112px;
+}
+
+.T28SB {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+}
+
 .T20L {
     color: #868686;
     font-family: 'Onest', sans-serif;
@@ -289,7 +317,6 @@ nav {
 }
 
 /*УСЛУГИ*/
-/**/
 .services {
     display: flex;
     flex-direction: column;
@@ -377,4 +404,25 @@ nav {
     padding: 120px 320px 50px 50px;
     border-radius: 50px;
     gap: 15px;
+}
+
+/*ПОМОГИТЕ*/ /**/
+.help {
+
+}
+
+.help_name_text_content {
+
+}
+
+.help_cards {
+
+}
+
+.help_card {
+
+}
+
+.help_cta {
+
 }
