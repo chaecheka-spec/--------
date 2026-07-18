@@ -75,6 +75,10 @@ a {
 }
 
 /*Тексты*/
+p {
+    margin: 0;
+}
+
 .H1 {
     color: #F0F0E7;
     font-family: 'Unbounded', sans-serif;
@@ -95,7 +99,7 @@ a {
 
 .H2B {
     color: #F0F0E7;
-    font-family: 'Onest', sans-serif;
+    font-family: 'Unbounded', sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 59px;
@@ -118,11 +122,12 @@ a {
 .H7M {
     font-family: 'Unbounded', sans-serif;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 .T90EB {
+    color: #5468FF;
     font-family: 'Unbounded', sans-serif;
     font-weight: 800;
     font-size: 90px;
@@ -130,6 +135,7 @@ a {
 }
 
 .T28SB {
+    color: #F0F0E7;
     font-family: 'Unbounded', sans-serif;
     font-weight: 600;
     font-size: 28px;
@@ -177,7 +183,7 @@ a {
     align-items: center;
     justify-content: space-between;
     background-color: #131316;
-    max-width: 1240px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     padding: 5px 5px 5px 20px;
@@ -209,7 +215,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 42px;
-    max-width: 1240px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 72px 100px;
     min-height: calc(100vh - 100px);
@@ -247,12 +253,27 @@ nav {
     z-index: 2;
 }
 
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
 .HPhoto_text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 30px;
+    left: 30px;
     color: white;
     z-index: 3;
+    gap: 4px;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 
 .Hero_Title {
@@ -261,7 +282,7 @@ nav {
 
 .send_badge {
     position: absolute;
-    top: 80px;                 /* по у */
+    top: 118px;                 /* по у */
     right: 232px;               /* по х */
     background: #6C63FF;
     color: white;
@@ -323,7 +344,7 @@ nav {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1240px;
-    padding: 120px 100px;
+    padding: 120px 100px 60px 100px;
     gap: 20px;
 }
 
@@ -366,7 +387,7 @@ nav {
     color: #131316;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0px;
 }
 
 .services_three {
@@ -382,47 +403,104 @@ nav {
 }
 
 .services_brending {
+    display: flex;
+    flex-direction: column;
+    
     background-color: #131316;
     color: #F0F0E7;
     padding: 120px 50px 50px 50px;
     border: 1px solid #3B3B3B;
     border-radius: 50px;
-    gap: 15px;
+    gap: 5px;
 }
 
 .services_UIUX {
+    display: flex;
+    flex-direction: column;
     background-color: #F0F0E7;
     color: #131316;
     padding: 120px 50px 50px 50px;
     border-radius: 50px;
-    gap: 15px;
+    gap: 5px;
 }
 
 .services_selling_materials {
+    display: flex;
+    flex-direction: column;
     background-color: #1E1E22;
     color: #F0F0E7;
     padding: 120px 320px 50px 50px;
     border-radius: 50px;
-    gap: 15px;
+    gap: 5px;
 }
 
 /*ПОМОГИТЕ*/ /**/
 .help {
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 60px 100px 60px 100px;
+    gap: 100px;
 }
 
 .help_name_text_content {
+    display: flex;
+    flex-direction: column;
+}
 
+.help_text_content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.help_text_right {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-end;
+}
+
+.help_text_left {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .help_cards {
-
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
 }
 
 .help_card {
-
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0E7;
+    padding: 30px 30px 60px 30px;
+    border-radius: 16px;
+    gap: 10px;
 }
 
 .help_cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
 
+.help_sta_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.help_sta_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
