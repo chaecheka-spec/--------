@@ -171,6 +171,13 @@ p {
     line-height: 20px;
 }
 
+.T16SB {
+    font-family: 'Onest', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .T14R {
     color: #F0F0E7;
     font-family: 'Unbounded', sans-serif;
@@ -648,6 +655,7 @@ nav {
     margin: 0 auto;
     max-width: 1240px;
     padding: 60px 100px 60px 100px;
+    gap: 80px;
 }
 
 .process_container {
@@ -770,6 +778,33 @@ nav {
     margin: 0 auto;
     max-width: 1240px;
     padding: 60px 100px 60px 100px;
+    gap: 80px;
+}
+
+.trust_moment {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1240px;
+    gap: 188px;
+}
+
+.trust_not_card {
+    display: flex;
+    flex-direction: column;
+    color: #F0F0E7;
+    gap: 32px;
+}
+
+.line2 {
+    height: 1px;
+    background-color: #F0F0E7;
+}
+
+.trust_not_card_text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 /*ВОПРОООСЫ*/
