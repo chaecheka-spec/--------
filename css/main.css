@@ -1032,5 +1032,21 @@ nav {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1240px;
-    padding: 60px 100px 60px 100px;
+    padding: 12px 100px 50px 100px;
+}
+
+.footer_full {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 1240px;
+}
+
+#ps {
+    color: #868686;
+}
+
+html {
+    scroll-behavior: smooth;
 }
