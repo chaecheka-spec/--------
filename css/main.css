@@ -141,6 +141,14 @@ p {
     line-height: 20px;
 }
 
+.H10B {
+    color: #131316;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 74px;
+}
+
 .T90EB {
     color: #5468FF;
     font-family: 'Unbounded', sans-serif;
@@ -156,6 +164,15 @@ p {
     font-size: 28px;
     line-height: 44px;
 }
+
+.T23B {
+    color: #131316;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 20px;
+}
+
 
 .T20L {
     color: #868686;
@@ -964,10 +981,48 @@ nav {
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto;
-    max-width: 1240px;
+    max-width: 1400px;
     padding: 60px 100px 60px 100px;
+}
+
+.frame_contact {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.contact_full {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #F0F0E7;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+    padding: 102px 76px 187px 76px;
+    border-radius: 37px;
+}
+
+.contact_text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.contact_tg {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.contact_tg img {
+    width: 78px;
+    height: 78px;
 }
 
 /*ПОДВАЛ ХЫЫЫ*/
