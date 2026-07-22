@@ -63,7 +63,7 @@ a {
 
 .Photo_Badge {
     position: absolute;
-    top: 11px;
+    top: -11px;
     left: 50px;
     background-color: #5468FF;
     color: #F0F0E7;
@@ -71,7 +71,7 @@ a {
     font-family: 'Onest', sans-serif;
     font-size: 11px;
     border-radius: 8px;
-    z-index: 2;
+
 }
 
 .button_case {
@@ -289,7 +289,6 @@ nav {
 .Hero_photo {
     position: relative;
     flex: 1;
-    overflow: hidden;
     border: 1px solid #3B3B3B;
     border-radius: 36px;
 }
@@ -301,6 +300,7 @@ nav {
     aspect-ratio: 4/5;          /* соотношение сторон 4:5 */
     object-fit: cover;          /* фото не сплющится */
     z-index: 1;
+    border-radius: 36px;
 }
 
 .HPhoto_overlay {
@@ -316,6 +316,7 @@ nav {
         transparent          /* сверху прозрачно */
     );
     z-index: 2;
+    border-radius: 36px;
 }
 
 .hero_content {
