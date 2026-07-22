@@ -89,6 +89,13 @@ a {
     color: #5468FF;
 }
 
+.center_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 /*Тексты*/
 p {
     margin: 0;
@@ -171,6 +178,14 @@ p {
     line-height: 20px;
 }
 
+.T17R {
+    color: #F0F0E7;
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+
 .T16SB {
     font-family: 'Onest', sans-serif;
     font-weight: 600;
@@ -178,7 +193,7 @@ p {
     line-height: 20px;
 }
 
-.T14R {
+.T14B {
     color: #F0F0E7;
     font-family: 'Unbounded', sans-serif;
     font-weight: 700;
@@ -196,6 +211,12 @@ p {
     color: #868686;
     font-family: 'Onest', sans-serif;
     font-weight: 400;
+    font-size: 12px;
+}
+
+.T14T {
+    font-family: 'Onest', sans-serif;
+    font-weight: 100;
     font-size: 12px;
 }
 
@@ -829,10 +850,6 @@ nav {
     margin: 0 auto;
 }
 
-.faq_one {
-    
-}
-
 .button_faq_q {
     display: flex;
     flex-direction: row;
@@ -866,6 +883,76 @@ nav {
     margin: 0 auto;
     max-width: 1240px;
     padding: 60px 100px 60px 100px;
+    gap: 80px;
+}
+
+.reviews_full {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+}
+
+.review_one {
+    position:relative;
+    display:inline-block;
+    padding: 40px 30px 30px 30px;
+    background-color: #131316;
+    border: 1px solid #3B3B3B;
+    border-radius: 17px;
+    transition:.35s ease;
+}
+
+.review_one:hover{
+    transform:translateY(-60px);
+}
+
+.fase {
+    position:absolute;
+
+    left:-22px;
+    top:-22px;
+
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: #5468FF;
+    border-radius: 74px 74px 74px 14px;
+}
+
+.fase img {
+    border-radius: 67px;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.review_card {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.review_text {
+    color: #F0F0E7;
+}
+
+.review_people {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #F0F0E7;
+}
+
+.review_name {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #5468FF;
+    border-radius: 6px;
+    padding: 1px 10px;
+    width: fit-content;
 }
 
 /*КОНТАКТЫ*/
