@@ -70,3 +70,46 @@ items.forEach(item => {
     }
   });
 });
+
+//попап
+const popup = document.getElementById("popup_contact");
+
+const close = document.querySelector(".button_popup_close");
+
+document.querySelectorAll(".open-popup").forEach(button=>{
+
+    button.addEventListener("click",(e)=>{
+
+        e.preventDefault();
+
+        popup.classList.add("active");
+
+        gsap.fromTo(".popup_contant",
+        {
+            y:40,
+            opacity:0,
+            scale:.95
+        },
+        {
+            y:0,
+            opacity:1,
+            scale:1,
+            duration:.35,
+            ease:"power3.out"
+        });
+
+    });
+
+});
+
+close.addEventListener("click",()=>{
+
+    popup.classList.remove("active");
+
+});
+
+document.querySelector(".popup_overlay").addEventListener("click",()=>{
+
+    popup.classList.remove("active");
+
+});
