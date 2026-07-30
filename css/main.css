@@ -22,9 +22,9 @@ a {
     background-color: #F0F0E7;
     color: #131316;
     padding: 14px 20px;
-    font-family: 'Unbounded', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
     border-radius: 65px;
     cursor: pointer;
     display: inline-block;
@@ -39,7 +39,8 @@ a {
 .button_secondary{
     color: #F0F0E7;
     padding: 14px 24px;
-    font-family: 'Unbounded', sans-serif;
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
     font-size: 14px;
     border: 1px solid #3B3B3B;
     border-radius: 25px;
@@ -96,6 +97,19 @@ a {
 }
 
 .button_popup_close:hover {
+    color: #5468FF;
+}
+
+.case_nav_back, .case_nav_next {
+    color: #F0F0E7;
+    border: none;
+    background: none;
+    padding: 0 0 18px 0;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.case_nav_back:hover, .case_nav_next:hover {
     color: #5468FF;
 }
 
@@ -173,6 +187,14 @@ p {
     font-weight: 600;
     font-size: 28px;
     line-height: 44px;
+}
+
+.T24EL {
+    font-family: 'Onest', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: justify;
 }
 
 .T23B {
@@ -287,7 +309,7 @@ p {
 .text_color2 {
     color: #868686;
 }
-
+ 
 
 /*Меню*/
 .Header {
@@ -1116,6 +1138,12 @@ nav {
     transform:translateY(30px);
     transition:.35s;
     box-sizing: border-box;
+    max-width: 90vw;          /* ширина не больше 90% экрана */
+    max-height: 90vh;         /* высота не больше 90% экрана */
+    width: auto;              /* чтобы ширина определялась контентом, но не более max-width */
+    height: auto;
+    margin: 0 auto;           /* центрируем по горизонтали */
+    overflow: visible;
 }
 
 .popup.active .popup_content{
@@ -1214,8 +1242,100 @@ nav {
     height: 38px;
 }
 
-/*ПОПАП Процесс*/
+/*ПОПАП кейс*/
+.popup_case_content{
+    position: relative;
+    display:none;
+    margin-bottom: 0;
+    gap: 219px;
+    align-items: center;
+}
 
+.popup_case_content.active{
+    display:grid;
+}
+
+.popup_case_line1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/*ПОПАП кейс навигация*/
+.case_nav {
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    transform:translateY(-50%);
+    z-index: 30;            
+    pointer-events: auto; 
+}
+
+.case_nav_point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: #868686;
+}
+
+.case_nav_point.active {
+    color: #F0F0E7;
+}
+
+.case_nav_point span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #868686;
+}
+
+.case_nav_point.active span {
+    background-color: #F0F0E7;
+    border-color: #F0F0E7;
+}
+
+/*stages*/
+.case_stages {
+    width: 100%;
+    width: min(1240px, calc(100vw - 40px));
+
+    background-color: #13131699;
+    padding: 70px;
+    border-radius: 70px;
+}
+
+.popup_case_content {
+    display: none;
+    grid-template-columns: 405px 1fr;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.popup_case_content.active {
+    display: grid;            /* показываем только активный */
+}
+
+.case_stage_photo img {
+    width: 405px;
+    height: 718px;
+    border-radius: 38px;
+}
+
+.case_stage_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+
+    padding: 0 0 0 0;
+    color: #F0F0E7;
+
+    width: 100%;
+    max-width: 487px;
+}
 
 
 html {

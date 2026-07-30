@@ -27,7 +27,7 @@
         <!--Картинка-->
         <div class="Hero_photo">
             <div class="Photo_Badge">hero-photo 4:5</div>
-            <img src="images\бипбипзянка.webp" alt="Фотография исполнителя">
+            <img src="images\шедевр.jpg" alt="Фотография исполнителя">
             <div class="HPhoto_overlay"></div>
             <div class="HPhoto_text">
                 <p class="T14B">Не кидай тапок пж</p>
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="button_case">смотреть кейс <svg class="icon" width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h18M18 5l7 7-7 7"/></svg></a>
+                    <a href="#" class="button_case" data-popup="case1">смотреть кейс <svg class="icon" width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h18M18 5l7 7-7 7"/></svg></a>
                 </div>
             </div>
             <!--два кейса-->
@@ -230,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="button_case">смотреть кейс <svg class="icon" width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h18M18 5l7 7-7 7"/></svg></a>
+                        <a href="" class="button_case" data-popup="case2">смотреть кейс <svg class="icon" width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h18M18 5l7 7-7 7"/></svg></a>
                     </div>
                 </div>
                 <!--второй-->
@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="button_case">смотреть кейс <svg class="icon" width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h18M18 5l7 7-7 7"/></svg></a>    
+                        <a href="" class="button_case" data-popup="case3">смотреть кейс <svg class="icon" width="20" height="20" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h18M18 5l7 7-7 7"/></svg></a>    
                     </div>
                 </div>
             </div>
@@ -531,8 +531,199 @@
         </div>
     </div>
 
+    <!--попап кейс1-->
+    <div class="popup" id="popup_case1">
+        <div class="popup_contant">
+            <div class="case_nav">
+                 <button class="case_nav_back">↑</button>
+                 <button class="case_nav_point" data-slide="0"><span></span>БРИФ</button>
+                 <button class="case_nav_point" data-slide="1"><span></span>СТРУКТУРА</button>
+                 <button class="case_nav_point" data-slide="2"><span></span>ДИЗАЙН</button>
+                 <button class="case_nav_point" data-slide="3"><span></span>ПЕРЕДАЧА</button>
+                 <button class="case_nav_next">↓</button>
+            </div>
+
+            <div class="case_stages">
+                <div class="popup_case_line1">
+                <button class="button_popup_close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+                <!--1-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\1\1бриф.png" alt="1brif1">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">БРИФ</p>
+                        <p class="T24EL">Погрузился в специфику проекта, изучил потребности пользователей и определил основные задачи платформы. Совместно с заказчиком сформировал функциональные требования, приоритеты и визуальное направление будущего интерфейса.</p>
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\1\2структура1.png" alt="2strukture1">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">СТРУКТУРА</p>
+                        <p class="T24EL">Разработал информационную архитектуру портала, распределил контент по смысловым разделам и выстроил понятный пользовательский сценарий. Каждый блок получил своё назначение, а навигация стала простой и интуитивной даже при большом объёме информации.</p>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\1\3дизайн.png" alt="3design1">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">ДИЗАЙН</p>
+                        <p class="T24EL">Создал современный интерфейс, сочетающий строгую структуру с яркими акцентами фирменного стиля. Контрастные блоки, крупная типографика и продуманная визуальная иерархия помогают быстро воспринимать информацию и удерживают внимание пользователя на ключевых действиях.</p>
+                    </div>
+                </div>
+
+                <!--4-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\1\4передача1.png" alt="4delivery1">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">ПЕРЕДАЧА</p>
+                        <p class="T24EL">Реализовал адаптивный интерфейс с сохранением единого визуального стиля на всех устройствах. Оптимизировал производительность, интерактивные элементы и пользовательские сценарии, чтобы взаимодействие с платформой оставалось быстрым, понятным и комфортным.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--попап кейс2 -->
+    <div class="popup" id="popup_case2">
+        <div class="popup_contant">
+            <div class="case_nav">
+                 <button class="case_nav_back">↑</button>
+                 <button class="case_nav_point" data-slide="0"><span></span>БРИФ</button>
+                 <button class="case_nav_point" data-slide="1"><span></span>СТРУКТУРА</button>
+                 <button class="case_nav_point" data-slide="2"><span></span>ДИЗАЙН</button>
+                 <button class="case_nav_point" data-slide="3"><span></span>ПЕРЕДАЧА</button>
+                 <button class="case_nav_next">↓</button>
+            </div>
+
+            <div class="case_stages">
+                <!--1-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\2\1бриф2.png" alt="1бриф2">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">БРИФ</p>
+                        <p class="T24EL">Изучил особенности проекта, целевую аудиторию и фирменный стиль серии Resident Evil. Определил ключевые сценарии пользователей, собрал референсы и сформировал требования к будущему интерфейсу, чтобы каждая деталь работала на атмосферу игры.</p>
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\2\2структура2.png" alt="2структура2">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">СТРУКТУРА</p>
+                        <p class="T24EL">Спроектировал структуру лендинга и пользовательский маршрут. Главный экран привлекает внимание, далее посетитель знакомится с персонажами, особенностями игры и доступными изданиями. Информация выстроена в логичной последовательности и постепенно подводит пользователя к покупке.</p>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\2\3дизайн2.png" alt="3дизайн2">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">ДИЗАЙН</p>
+                        <p class="T24EL">Разработал визуальную концепцию, вдохновлённую мрачной атмосферой Resident Evil Village. Контрастная типографика, кинематографичные изображения и тёмная цветовая палитра помогают передать настроение игры, а продуманная композиция удерживает внимание на самых важных элементах страницы.</p>
+                    </div>
+                </div>
+
+                <!--4-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\2\4передача2.png" alt="4передача2">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">ПЕРЕДАЧА</p>
+                        <p class="T24EL">Адаптировал макет под разные разрешения экранов, реализовал плавные анимации и оптимизировал загрузку изображений. Интерфейс сохранил визуальную целостность и высокую производительность на всех современных устройствах, обеспечивая комфортное взаимодействие с сайтом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--попап кейс3 -->
+    <div class="popup" id="popup_case3">
+        <div class="popup_contant">
+            <div class="case_nav">
+                 <button class="case_nav_back">↑</button>
+                 <button class="case_nav_point" data-slide="0"><span></span>БРИФ</button>
+                 <button class="case_nav_point" data-slide="1"><span></span>СТРУКТУРА</button>
+                 <button class="case_nav_point" data-slide="2"><span></span>ДИЗАЙН</button>
+                 <button class="case_nav_point" data-slide="3"><span></span>ПЕРЕДАЧА</button>
+                 <button class="case_nav_next">↓</button>
+            </div>
+
+            <div class="case_stages">
+                <!--1-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\3\1бриф3.png" alt="1бриф3">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">БРИФ</p>
+                        <p class="T24EL">Погрузился в задачи бизнеса, изучи целевую аудиторию и конкурентную среду. Сформировал чёткие цели проекта и определил критерии, по которым будет оцениваться его эффективность.</p>
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\3\2структура3.png" alt="2стуктура3">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">СТРУКТУРА</p>
+                        <p class="T24EL">Спроектировал пользовательский сценарий, определил архитектуру страниц и последовательность подачи информации. Каждый блок получил своё место и конкретную задачу в общей логике сайта.</p>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\3\3дизайн3.png" alt="3дизайн3">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">ДИЗАЙН</p>
+                        <p class="T24EL">Создал визуальную систему проекта, объединив фирменный стиль, современную типографику и продуманную композицию. Интерфейс получился выразительным, понятным и ориентированным на повышение доверия пользователя.</p>
+                    </div>
+                </div>
+
+                <!--4-->
+                <div class="popup_case_content">
+                    <div class="case_stage_photo">
+                        <img src="images\попап кейсы\3\4передача3.png" alt="4передача3">
+                    </div>
+                    <div class="case_stage_text">
+                        <p class="H2B">ПЕРЕДАЧА</p>
+                        <p class="T24EL">Реализовал дизайн в виде полноценного адаптивного сайта с вниманием к деталям. Проверил корректность отображения, оптимизировал производительность и подготовил проект к передаче верстальщику.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-    <script src="scripn.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
